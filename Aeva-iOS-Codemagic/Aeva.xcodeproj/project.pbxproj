@@ -1,0 +1,19 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1; objectVersion = 56; objects = {
+ A1 = {isa = PBXBuildFile; fileRef = F1;};
+ A2 = {isa = PBXBuildFile; fileRef = F2;};
+ F1 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AevaApp.swift; sourceTree = "<group>";};
+ F2 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>";};
+ F3 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Aeva.app; sourceTree = BUILT_PRODUCTS_DIR;};
+ G1 = {isa = PBXGroup; children = (G2,G3); sourceTree = "<group>";};
+ G2 = {isa = PBXGroup; children = (F1,F2); path = Aeva; sourceTree = "<group>";};
+ G3 = {isa = PBXGroup; children = (F3); name = Products; sourceTree = "<group>";};
+ P1 = {isa = PBXProject; buildConfigurationList = L1; compatibilityVersion = "Xcode 14.0"; mainGroup = G1; productRefGroup = G3; targets = (T1);};
+ S1 = {isa = PBXSourcesBuildPhase; files = (A1,A2);};
+ T1 = {isa = PBXNativeTarget; buildConfigurationList = L2; buildPhases = (S1); name = Aeva; productName = Aeva; productReference = F3; productType = "com.apple.product-type.application";};
+ C1 = {isa = XCBuildConfiguration; buildSettings = {PRODUCT_BUNDLE_IDENTIFIER = com.aeva.app; PRODUCT_NAME = Aeva; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; TARGETED_DEVICE_FAMILY = "1,2"; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = AEVA;}; name = Release;};
+ C2 = {isa = XCBuildConfiguration; buildSettings = {PRODUCT_BUNDLE_IDENTIFIER = com.aeva.app; PRODUCT_NAME = Aeva; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; TARGETED_DEVICE_FAMILY = "1,2"; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = AEVA;}; name = Debug;};
+ L1 = {isa = XCConfigurationList; buildConfigurations = (C1); defaultConfigurationName = Release;};
+ L2 = {isa = XCConfigurationList; buildConfigurations = (C1,C2); defaultConfigurationName = Release;};
+ }; rootObject = P1; }
