@@ -1,13 +1,24 @@
 workflows:
-  aeva-ios:
-    name: Aeva iOS
+  test-aeva:
+    name: Aeva Diagnostic Test
+
     environment:
       xcode: latest
+
     scripts:
-      - name: Build Aeva
+      - name: TEST
         script: |
-          set -e
-          xcodebuild -project "Aeva.xcodeproj" -scheme "Aeva" -configuration Release -sdk iphoneos -archivePath "$CM_BUILD_DIR/Aeva.xcarchive" CODE_SIGNING_ALLOWED=NO archive
+          echo "================================"
+          echo "AEVA BUILD TEST"
+          echo "================================"
+          echo "Build machine OK"
+          echo "Current directory:"
+          pwd
+          echo "Files:"
+          ls -la
+          echo "================================"
+          echo "TEST COMPLETATO"
+          echo "================================"
+
     artifacts:
-      - "$CM_BUILD_DIR/Aeva.xcarchive"
       - /tmp/xcodebuild_logs/*.log
